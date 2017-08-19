@@ -12,3 +12,5 @@ Step 4: You can tap Settings button to change tip percentage
 Step 5: After Step 4, you will be nagivated to Settings detail page 
 
 Step 6: After Step 5, you will see the selected tip percentage setting and corresponding results up to date
+
+![alt text](https://github.com/zoufengboy/TipCalculator/blob/master/TipCalculator_Demo.gif)
