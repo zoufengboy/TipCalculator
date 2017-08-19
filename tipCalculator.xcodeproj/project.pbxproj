@@ -12,6 +12,7 @@
 		3A6B53C11F42D36F0051EF8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B53BF1F42D36F0051EF8D /* Main.storyboard */; };
 		3A6B53C31F42D36F0051EF8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B53C21F42D36F0051EF8D /* Assets.xcassets */; };
 		3A6B53C61F42D36F0051EF8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B53C41F42D36F0051EF8D /* LaunchScreen.storyboard */; };
+		3A850E401F47BEE000F694A5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A850E3F1F47BEE000F694A5 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3A6B53C21F42D36F0051EF8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A6B53C51F42D36F0051EF8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A6B53C71F42D36F0051EF8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A850E3F1F47BEE000F694A5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				3A6B53C21F42D36F0051EF8D /* Assets.xcassets */,
 				3A6B53C41F42D36F0051EF8D /* LaunchScreen.storyboard */,
 				3A6B53C71F42D36F0051EF8D /* Info.plist */,
+				3A850E3F1F47BEE000F694A5 /* SettingsViewController.swift */,
 			);
 			path = tipCalculator;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				3A6B53BE1F42D36F0051EF8D /* ViewController.swift in Sources */,
 				3A6B53BC1F42D36F0051EF8D /* AppDelegate.swift in Sources */,
+				3A850E401F47BEE000F694A5 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +308,7 @@
 				3A6B53CC1F42D36F0051EF8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
