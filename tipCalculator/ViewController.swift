@@ -51,7 +51,6 @@ class ViewController: UIViewController {
         tipLabel.alpha = 0
         totalLabel.alpha = 0
 
-        
         self.onEditingChanged(sender: self)
     }
     
