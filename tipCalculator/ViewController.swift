@@ -12,27 +12,60 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        containerView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onTap)))
+        billAmountTextLabel.alpha = 0
+        tipTextLabel.alpha = 0
+        totalTextLabel.alpha = 0
+        billAmountTextField.alpha = 0
+        tipLabel.alpha = 0
+        totalLabel.alpha = 0
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var billAmountTextLabel: UILabel!
+    @IBOutlet weak var tipTextLabel: UILabel!
+    @IBOutlet weak var totalTextLabel: UILabel!
+    
     @IBOutlet weak var billAmountTextField: UITextField!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var tipControl: UISegmentedControl!
     
+    
     override func viewWillAppear(_ animated: Bool) {
         let defaults = UserDefaults.standard
         let percentSetting = defaults.integer(forKey: "tip_percent")
-        
+        billAmountTextField.becomeFirstResponder()
         tipControl.selectedSegmentIndex = percentSetting
+        billAmountTextLabel.alpha = 0
+        tipTextLabel.alpha = 0
+        totalTextLabel.alpha = 0
+        billAmountTextField.alpha = 0
+        tipLabel.alpha = 0
+        totalLabel.alpha = 0
+
+        
         self.onEditingChanged(sender: self)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(withDuration: 2, animations: {
+            self.billAmountTextLabel.alpha = 1
+            self.tipTextLabel.alpha = 1
+            self.totalTextLabel.alpha = 1
+            self.billAmountTextField.alpha = 1
+            self.tipLabel.alpha = 1
+            self.totalLabel.alpha = 1
+        })
+        
     }
     
 

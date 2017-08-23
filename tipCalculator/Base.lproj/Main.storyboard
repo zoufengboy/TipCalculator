@@ -39,7 +39,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gS1-CP-eWv">
-                                <rect key="frame" x="65" y="130" width="25" height="21"/>
+                                <rect key="frame" x="65" y="130" width="38" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -101,10 +101,13 @@
                     </navigationItem>
                     <connections>
                         <outlet property="billAmountTextField" destination="8Th-eL-gOP" id="Vy8-sJ-evl"/>
+                        <outlet property="billAmountTextLabel" destination="1lr-c1-YYn" id="RrA-AG-SW6"/>
                         <outlet property="containerView" destination="8bC-Xf-vdC" id="uVi-A6-Vw3"/>
                         <outlet property="tipControl" destination="qMC-Ps-uT7" id="nQL-Hq-6eP"/>
                         <outlet property="tipLabel" destination="vwq-VG-nVj" id="Ka0-yq-bav"/>
+                        <outlet property="tipTextLabel" destination="gS1-CP-eWv" id="EGf-RN-NmE"/>
                         <outlet property="totalLabel" destination="uiA-US-MoY" id="32c-yA-sZa"/>
+                        <outlet property="totalTextLabel" destination="k3f-JU-8TG" id="mYX-kp-TP6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
